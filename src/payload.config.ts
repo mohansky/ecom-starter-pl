@@ -47,7 +47,7 @@ export default buildConfig({
   }),
   db: sqliteAdapter({
     client: {
-      url: process.env.DATABASE_URI || '',
+      url: process.env.DATABASE_URI || 'file:./ecom-payload-starter.db',
     },
   }),
   sharp,

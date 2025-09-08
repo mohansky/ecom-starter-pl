@@ -397,3 +397,5 @@ Future enhancements planned:
 - [ ] Discount codes and promotions
 - [ ] Multi-currency support
 - [ ] Advanced inventory management
+
+Mogs0103
