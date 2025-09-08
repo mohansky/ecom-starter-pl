@@ -6,6 +6,13 @@ compatibility_flags = ["nodejs_compat"]
 [build]
 command = "pnpm run build"
 
+[build.upload]
+format = "modules"
+
+[[build.upload.rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+
 [vars]
 NODE_ENV = "production"
 
