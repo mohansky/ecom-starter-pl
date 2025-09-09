@@ -7,6 +7,10 @@ const nextConfig = {
     '@aws-sdk/client-s3', 
     '@aws-sdk/s3-request-presigner', 
     'libsql',
+    'react-server-dom-turbopack/client',
+    'react-server-dom-turbopack/server', 
+    'react-server-dom-turbopack/static',
+    '@vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts',
   ],
   webpack: (webpackConfig, { isServer }) => {
     webpackConfig.resolve.extensionAlias = {
