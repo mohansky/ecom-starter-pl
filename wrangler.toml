@@ -6,17 +6,5 @@ compatibility_flags = ["nodejs_compat"]
 [build]
 command = "pnpm run build"
 
-[build.upload]
-format = "modules"
-
-[[build.upload.rules]]
-type = "ESModule"
-globs = ["**/*.js"]
-
 [vars]
-NODE_ENV = "production"
-
-[[d1_databases]]
-binding = "DB"
-database_name = "ecom-payload-db"
-database_id = "26125be3-951c-4d8a-8118-ccbcdbec1edf"
+DATABASE_URI = "libsql://ecom-payload-starter-mohansky.aws-ap-south-1.turso.io"

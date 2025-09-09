@@ -3,7 +3,7 @@ import { withPayload } from '@payloadcms/next/withPayload'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Your Next.js config here
-  serverExternalPackages: ['@aws-sdk/client-s3', '@aws-sdk/s3-request-presigner'],
+  serverExternalPackages: ['@aws-sdk/client-s3', '@aws-sdk/s3-request-presigner', 'libsql'],
   webpack: (webpackConfig, { isServer }) => {
     webpackConfig.resolve.extensionAlias = {
       '.cjs': ['.cts', '.cjs'],
@@ -19,6 +19,7 @@ const nextConfig = {
         '@smithy/middleware-retry': 'commonjs @smithy/middleware-retry',
         '@smithy/smithy-client': 'commonjs @smithy/smithy-client',
         '@smithy/types': 'commonjs @smithy/types',
+        'libsql': 'commonjs libsql',
       })
     }
 
